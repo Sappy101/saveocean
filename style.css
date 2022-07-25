@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Poppins:wght@300;600&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("images/ocean\ \(3\)@4x.png");
+    background-repeat: round;
+    background-size: cover;
+}
+
+header {
+    width: 100vw;
+    padding: 50px 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: 1.5em;
+    font-weight: 900;
+    font-family: 'Comfortaa', cursive;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar li {
+    list-style: none;
+    margin: 9px;
+}
+
+.navbar li a {
+    padding: 6px 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar li a:hover {
+    background-color: #efefef;
+    color: aqua;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+#home {
+    color: white;
+    background-color: aqua;
+    border-radius: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+
+.content {
+    position: absolute;
+    right: 8vw;
+    top: 10vw;
+    width: 32vw;
+    height: 32vw;
+}
+
+.content h3 {
+    font-size: 2.5em;
+    height: 2.5em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 4vw;
+}
+
+
+/*#change_content_2 {
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+}*/
+
+#planet {
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+}
+
+.content h1 {
+    font-size: 5em;
+    height: 1.2em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animate {
+    height: 7.35em;
+    overflow: hidden;
+    animation: animate 3s infinite linear;
+    border-radius: 20px;
+}
+
+
+/* .animate::after {
+    content: "";
+    animation: changetext 10s infinite linear;
+    color: #20ccfb;
+}
+
+.animate:hover {
+    background: #fff;
+    size: 10px;
+    color: #20ccfb;
+} */
+
+.animate ul {
+    position: relative;
+    bottom: 0;
+    width: 31.5vw;
+    list-style: none;
+}
+
+.animate ul li {
+    color: aqua;
+    font-size: 4.8em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons a {
+    width: 30%;
+    height: 30px;
+    text-decoration: none;
+    border: 2px solid;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-family: 'Comfortaa', cursive;
+    font-size: small;
+}
+
+#learnMore {
+    color: white;
+    padding: 8px 15px;
+}
+
+#learnMore:hover {
+    background-color: white;
+    color: aqua;
+    font-weight: 900;
+    border: 2px solid white;
+}
+
+#joinUs {
+    color: aqua;
+    padding: 8px 25px;
+}
+
+#joinUs:hover {
+    background-color: aqua;
+    color: white;
+    font-weight: 900;
+    border: 2px solid aqua;
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+    }
+    20% {
+        width: 100%;
+    }
+    80% {
+        width: 100%;
+    }
+    100% {
+        width: 0;
+    }
+}
+
+.character img {
+    position: absolute;
+    width: 99vw;
+    height: 99vh;
+    left: 0vw;
+    animation: character 3s 1 linear;
+    z-index: -1;
+}
+
+@keyframes character {
+    0% {
+        left: -100vw;
+        opacity: 0;
+    }
+    20% {
+        left: -100vw;
+    }
+    100% {
+        left: 0vw;
+        opacity: 1;
+    }
+}
+
+.change_content_2 {
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+}
+
+
+/* .change_content_2:after {
+    content: "";
+    size: 100px;
+    animation: changetext_2 10s infinite linear;
+    color: #20ccfb;
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+    font-size: 31px;
+}
+
+.change_content_2:hover {
+    background: #fff;
+    color: #20ccfb;
+    border-radius: 7.5px;
+    color: aqua;
+    font-family: 'Comfortaa', cursive;
+    font-size: 31px;
+}
+
+@keyframes changetext_2 {
+    0% {
+        content: "PLANET";
+    }
+    10% {
+        content: "PLAN";
+    }
+    20% {
+        content: "OPTION";
+    }
+    30% {
+        content: "PLANET";
+    }
+    40% {
+        content: "PLAN";
+    }
+    50% {
+        content: "OPTION";
+    }
+    60% {
+        content: "PLANET";
+    }
+    70% {
+        content: "PLAN";
+    }
+    80% {
+        content: "OPTION";
+    }
+    90% {
+        content: "PLANET";
+    }
+    100% {
+        content: "PLAN";
+    }
+} */
